@@ -1,3 +1,28 @@
 <h1>
     <?php $block->sayhello() ?>
 </h1>
+
+<h2>
+    <?php
+        echo "Món ăn được tạo bằng Assign : " . $monan;
+    ?>
+</h2>
+
+<h3>
+    <?php
+        echo "Nước uống được tạo bằng setData : " . $this->getData("thucuong");
+    ?>
+</h3>
+
+
+<?php
+$hinh01 = $block->getBaseUrl()."pub/media/doraemon.jpg";
+?>
+<img src="<?php echo $hinh01; ?>" />
+
+
+<?php
+$media = $this->getData('media');
+$hinh02 = $media."doraemon.jpg";
+?>
+<img src="<?php echo $hinh02; ?>" />

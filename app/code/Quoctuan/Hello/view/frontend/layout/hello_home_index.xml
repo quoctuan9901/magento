@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Quoctuan_Hello::css/mystyle.css" />
+        <script src="Quoctuan_Hello::js/myscript.js" />
+    </head>
     <referenceContainer name="content">
         <block class="Quoctuan\Hello\Block\Index" name="Hello_Index" template="Quoctuan_Hello::index.phtml" />
     </referenceContainer>
